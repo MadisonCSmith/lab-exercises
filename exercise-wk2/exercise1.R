@@ -9,7 +9,7 @@ my.vector <- c(my.num, initials)
 vector.sum <- sum(my.vector)
 
 # Describe why this doesn't work: 
-# 
+# you're mixing data types- initials are strings and my.num is a int
 
 install.packages("stringr")
 
@@ -18,17 +18,18 @@ my.line <- "Hey, hey, this is the library"
 print(str_length(my.line))
 
 # Describe why this doesn't work: 
-# 
+# the library isn't loaded- str_length does exist
 
 said.the.famous <- paste(my.line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# it's initials not initial-> typo
 
 
 ## Part 2 - Vector and function practice
 
 # Make a vector and use typeof to check what type R considers it to be
+
 
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
